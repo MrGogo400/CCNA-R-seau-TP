@@ -177,8 +177,11 @@ cd observium
 cp config.php.default config.php
 ```
 
-> On oublie pas de cha
+> On oublie pas de changer les identifiants MySQL par les notres
+```
+./discovery.php -u
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMjcwNjAxN119
+eyJoaXN0b3J5IjpbLTQ1MjE2OTU0Ml19
 -->
