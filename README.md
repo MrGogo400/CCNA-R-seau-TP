@@ -39,8 +39,46 @@
      ip nat inside
      ip virtual-reassembly
 
+### client-sw1 : 
+
+    interface Ethernet0/0
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+    !
+    interface Ethernet0/1
+     switchport access vlan 10
+     switchport mode access
+    !
+    interface Ethernet0/2
+     switchport access vlan 20
+     switchport mode access
+    !
+### client-sw2 : 
+
+    interface Ethernet0/0
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+    !
+    interface Ethernet0/1
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+    !
+    interface Ethernet0/2
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+    !
+    interface Ethernet0/3
+     switchport access vlan 10
+     switchport mode access
+    !
+    interface Ethernet1/0
+     switchport access vlan 20
+     switchport mode access
+    !
+### client-sw3 : 
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NzYxMjA2M119
+eyJoaXN0b3J5IjpbMTY5NTQ1OTI2Nl19
 -->
