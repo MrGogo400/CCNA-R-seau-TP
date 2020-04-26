@@ -184,7 +184,7 @@ cp config.php.default config.php
 
 ### 4. Configuration du système
 
-### 4.1 FPing
+### 4.1 FPing :
 
 > On rajoute cette ligne dans le fichier config.php de fping
 
@@ -192,7 +192,7 @@ cp config.php.default config.php
 $config['fping'] = "/sbin/fping";
 ```
 
-### 4.2 SELinux
+### 4.2 SELinux :
 
 > On désactive SELinux pour le passer en permissive
 
@@ -204,7 +204,7 @@ setenforce 0
 ```
  SELINUX=permissive
 ```
-### 4.3 RRD & Apache
+### 4.3 RRD & Apache :
 
 ```
  mkdir rrd
@@ -254,7 +254,7 @@ cd /opt/observium
 ./poller.php -h all
 ```
 
-### 4.4 Cron 
+### 4.4 Cron :
 
 ```
 # Run a complete discovery of all devices once every 6 hours
@@ -277,14 +277,18 @@ cd /opt/observium
 systemctl reload crond
 ```
 
-### 4.5 HTTPD
+### 4.5 HTTPD :
 
 ```
 systemctl enable httpd
 systemctl start httpd
 ```
 
+### 5. Coté client :
 
+```
+sudo yum install -y telnet net-snmp net-snmp-utils
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2MTU0NjQ3LC00NTIxNjk1NDJdfQ==
+eyJoaXN0b3J5IjpbMjAyNzE4OTIwMCwtNDUyMTY5NTQyXX0=
 -->
