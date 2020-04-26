@@ -173,6 +173,12 @@ mysql> exit;
 ```
 cd observium
 ```
+```
+cp config.php.default config.php
+```
+
+> On oublie pas de cha
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyOTMzODUxXX0=
+eyJoaXN0b3J5IjpbMjEwMjcwNjAxN119
 -->
