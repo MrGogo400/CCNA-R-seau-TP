@@ -247,13 +247,35 @@ cd /opt/observium
 ./add_device.php 10.5.20.25 v2c
 ```
 
-> Blockquote
+> On découvre ce qu'on peut monitor
 
 ```
 ./discovery.php -h all
 ./poller.php -h all
 ```
 
+### 4.4 Cron 
+
+```
+# Run a complete discovery of all devices once every 6 hours
+33  */6   * * *   root    /opt/observium/discovery.php -h all >> /dev/null 2>&1
+
+# Run automated discovery of newly added devices every 5 minutes
+*/5 *     * * *   root    /opt/observium/discovery.php -h new >> /dev/null 2>&1
+
+# Run multithreaded poller wrapper every 5 minutes
+*/5 *     * * *   root    /opt/observium/poller-wrapper.py >> /dev/null 2>&1
+
+# Run housekeeping script daily for syslog, eventlog and alert log
+13 5 * * * root /opt/observium/housekeeping.php -ysel
+
+# Run housekeeping script daily for rrds, ports, orphaned entries in the database and performance data
+47 4 * * * root /opt/observium/housekeeping.php -yrptb
+```
+
+```
+systemctl reload crond
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MzQ3MTc1NywtNDUyMTY5NTQyXX0=
+eyJoaXN0b3J5IjpbNzcxNDgyNjIwLC00NTIxNjk1NDJdfQ==
 -->
