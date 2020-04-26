@@ -241,8 +241,19 @@ cd /opt/observium
 ./adduser.php hugo afn 10
 ```
 
-> Une machine a mont
+> Une machine a monitor
+
+```
+./add_device.php 10.5.20.25 v2c
+```
+
+> Blockquote
+
+```
+./discovery.php -h all
+./poller.php -h all
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODQwODUzMSwtNDUyMTY5NTQyXX0=
+eyJoaXN0b3J5IjpbMTU3MzQ3MTc1NywtNDUyMTY5NTQyXX0=
 -->
