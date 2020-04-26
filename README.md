@@ -227,6 +227,22 @@ setenforce 0
 </VirtualHost>
 ```
 
+> Création du dossier de logs
+
+```
+mkdir /opt/observium/logs
+chown apache:apache /opt/observium/logs
+```
+
+> Je rajoute un user en tant qu'admin
+
+```
+cd /opt/observium
+./adduser.php hugo afn 10
+```
+
+> Une machine a mont
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5Nzg3MDQzLC00NTIxNjk1NDJdfQ==
+eyJoaXN0b3J5IjpbMTUzODQwODUzMSwtNDUyMTY5NTQyXX0=
 -->
