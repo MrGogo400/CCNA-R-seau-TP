@@ -78,7 +78,23 @@
 ### client-sw3 : 
 
 
+    interface Ethernet0/0
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+    !
+    interface Ethernet0/1
+     switchport access vlan 10
+     switchport mode access
+    !
+    interface Ethernet0/2
+     switchport access vlan 20
+     switchport mode access
+    !
+    interface Ethernet0/3
+     switchport access vlan 30
+     switchport mode access
+    !
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTQ1OTI2Nl19
+eyJoaXN0b3J5IjpbMTU0MzUzNTEzNl19
 -->
