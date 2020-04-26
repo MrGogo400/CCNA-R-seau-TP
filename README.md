@@ -182,14 +182,19 @@ cp config.php.default config.php
 ./discovery.php -u
 ```
 
-### 3.1 FPing
+### 4. Configuration du système
 
-> On rajoute cette ligne dans le fich
+### 4.1 FPing
+
+> On rajoute cette ligne dans le fichier config.php de fping
 
 ```
 $config['fping'] = "/sbin/fping";
 ```
 
+### 4.2 SELinux
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MzM2MjM5MywtNDUyMTY5NTQyXX0=
+eyJoaXN0b3J5IjpbMTU2NDMwMDQzNSwtNDUyMTY5NTQyXX0=
 -->
