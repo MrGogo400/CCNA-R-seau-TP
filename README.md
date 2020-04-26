@@ -94,7 +94,22 @@
      switchport access vlan 30
      switchport mode access
     !
+### infra-sw1 :
+
+    interface Ethernet0/0
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+    !
+    interface Ethernet0/1
+     switchport access vlan 30
+     switchport mode access
+    !
+    interface Ethernet0/2
+     switchport access vlan 30
+     switchport mode access
+    !
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MzUzNTEzNl19
+eyJoaXN0b3J5IjpbNTMwMjY4MzA2XX0=
 -->
