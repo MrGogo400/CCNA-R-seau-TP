@@ -109,11 +109,15 @@
      switchport mode access
     !
 
+Après j'ai les mêmes fichiers de config que tu à donner donc bon....
+
 ## TP : Métrologie Réseau : SNMP, monitoring, gestion de logs
+
+1. Installation
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MjYzMjYyNV19
+eyJoaXN0b3J5IjpbMTMzOTE2NjIxNF19
 -->
