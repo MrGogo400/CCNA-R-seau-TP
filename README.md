@@ -113,11 +113,29 @@ Après j'ai les mêmes fichiers de config que tu à donner donc bon....
 
 ## TP : Métrologie Réseau : SNMP, monitoring, gestion de logs
 
-1. Installation
+### 1. Installation
 
+#### Les répos : 
+```
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install http://yum.opennms.org/repofiles/opennms-repo-stable-rhel7.noarch.rpm
+yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+```
+
+#### Les Packages : 
+
+```
+yum install yum-utils
+```
+```
+yum-config-manager --enable remi-php72
+```
+```
+yum update
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTE2NjIxNF19
+eyJoaXN0b3J5IjpbODk0MTUzNjI0XX0=
 -->
