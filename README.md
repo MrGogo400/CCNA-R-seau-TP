@@ -286,9 +286,22 @@ systemctl start httpd
 
 ### 5. Coté client :
 
+> On installe les packages
+
 ```
 sudo yum install -y telnet net-snmp net-snmp-utils
 ```
+
+> Petite save du fichier de config
+
+```
+cp /etc/snmp/snmpd.conf /etc/snmp/snmpd.conf.old
+```
+
+```
+firewall-cmd --add-port=161/udp --permanent
+firewall-cmd --reload
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzE4OTIwMCwtNDUyMTY5NTQyXX0=
+eyJoaXN0b3J5IjpbMTI3MzI4NTg3MSwtNDUyMTY5NTQyXX0=
 -->
