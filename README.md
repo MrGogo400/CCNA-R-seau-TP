@@ -194,7 +194,18 @@ $config['fping'] = "/sbin/fping";
 
 ### 4.2 SELinux
 
+> On désactive SELinux pour le passer en permissive
+
+```
+setenforce 0
+```
+
+> Dans le fichier **/etc/selinux/config** on le passe en permissive
+```
+ SELINUX=permissive
+```
+### 4?3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NDMwMDQzNSwtNDUyMTY5NTQyXX0=
+eyJoaXN0b3J5IjpbMzIzOTI2NzY4LC00NTIxNjk1NDJdfQ==
 -->
