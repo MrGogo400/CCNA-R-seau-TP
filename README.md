@@ -182,6 +182,14 @@ cp config.php.default config.php
 ./discovery.php -u
 ```
 
+### 3.1 FPing
+
+> On rajoute cette ligne dans le fich
+
+```
+$config['fping'] = "/sbin/fping";
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjE2OTU0Ml19
+eyJoaXN0b3J5IjpbMTY2MzM2MjM5MywtNDUyMTY5NTQyXX0=
 -->
