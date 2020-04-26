@@ -109,7 +109,11 @@
      switchport mode access
     !
 
+## TP : Métrologie Réseau : SNMP, monitoring, gestion de logs
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMjY4MzA2XX0=
+eyJoaXN0b3J5IjpbLTU1MjYzMjYyNV19
 -->
