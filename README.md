@@ -204,8 +204,29 @@ setenforce 0
 ```
  SELINUX=permissive
 ```
-### 4?3
+### 4.3 RRD & Apache
+
+```
+ mkdir rrd
+ chown apache:apache rrd
+```
+
+> Dans le fichier **/etc/httpd/conf.d/observium.conf** et on rajoute le VirtualHost
+
+```
+<VirtualHost *>
+   DocumentRoot /opt/observium/html/
+   ServerName  observium.domain.com
+   CustomLog /opt/observium/logs/access_log combined
+   ErrorLog /opt/observium/logs/error_log
+   <Directory "/opt/observium/html/">
+     AllowOverride All
+     Options FollowSymLinks MultiViews
+     Require all granted
+   </Directory>
+</VirtualHost>
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIzOTI2NzY4LC00NTIxNjk1NDJdfQ==
+eyJoaXN0b3J5IjpbOTQ5Nzg3MDQzLC00NTIxNjk1NDJdfQ==
 -->
