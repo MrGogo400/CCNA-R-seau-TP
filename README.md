@@ -298,10 +298,12 @@ sudo yum install -y telnet net-snmp net-snmp-utils
 cp /etc/snmp/snmpd.conf /etc/snmp/snmpd.conf.old
 ```
 
+> Et on ouvre le port
+
 ```
 firewall-cmd --add-port=161/udp --permanent
 firewall-cmd --reload
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzI4NTg3MSwtNDUyMTY5NTQyXX0=
+eyJoaXN0b3J5IjpbLTE3ODA5NTM2NTgsLTQ1MjE2OTU0Ml19
 -->
