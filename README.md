@@ -150,12 +150,29 @@ mkdir -p /opt/observium && cd /opt
 wget http://www.observium.org/observium-community-latest.tar.gz
 tar zxvf observium-community-latest.tar.gz
 ```
-### 2. MariaDB :
+### 2. Base de données :
 
+```
+systemctl enable mariadb
+systemctl start mariadb
+```
 
+```
+/usr/bin/mysqladmin -u root password 'afn'
+```
 
+```
+mysql -u root -p
+afn
+mysql> CREATE DATABASE observium DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+mysql> GRANT ALL PRIVILEGES ON observium.* TO 'observium'@'localhost' IDENTIFIED BY '<observium db password>';
+mysql> exit;
+```
+### 3. Configuration de Observium :
 
-
+```
+cd observium
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3ODgxMTAyXX0=
+eyJoaXN0b3J5IjpbNDMyOTMzODUxXX0=
 -->
