@@ -304,6 +304,8 @@ cp /etc/snmp/snmpd.conf /etc/snmp/snmpd.conf.old
 firewall-cmd --add-port=161/udp --permanent
 firewall-cmd --reload
 ```
+
+## Et voilà Observium installer !
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODA5NTM2NTgsLTQ1MjE2OTU0Ml19
+eyJoaXN0b3J5IjpbMTQxNzQwNjE3NCwtNDUyMTY5NTQyXX0=
 -->
