@@ -276,6 +276,13 @@ cd /opt/observium
 ```
 systemctl reload crond
 ```
+
+### 4.5 HTTPD
+
+```
+systemctl enable httpd
+systemctl start httpd
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxNDgyNjIwLC00NTIxNjk1NDJdfQ==
+eyJoaXN0b3J5IjpbLTEwMTg5NzE0NjEsLTQ1MjE2OTU0Ml19
 -->
